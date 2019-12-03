@@ -1,0 +1,15 @@
+package cn.downey.ct.common.bean.annotation;
+
+import cn.downey.ct.common.constant.Names;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Column {
+    String family() default "info";
+    String column() default "";
+}
