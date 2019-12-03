@@ -11,6 +11,7 @@ import java.io.IOException;
 
 //采集：[atguigu@hadoop100 flume]$ bin/flume-ng agent -c conf/ -n a1 -f /opt/module/data/flume-exec-kafka.conf
 //生产：[atguigu@hadoop100 data]$ java -jar ct-producer.jar /opt/module/data/contact.log /opt/module/data/call.log
+//MR:[atguigu@hadoop100 data]$ /opt/module/hadoop-2.7.2/bin/yarn jar ct_analysis_jar/ct-analysis.jar
 public class Bootstrap {
     public static void main(String[] args) throws IOException {
 
